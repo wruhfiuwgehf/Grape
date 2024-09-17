@@ -1,15 +1,21 @@
 // We enclose this in window.onload.
 // So we don't have ridiculous errors.
 window.onload = function() {
+
+
+
+  
   // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
-  };
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCDrMErdhG_ew9BuzOODEQnUzOc7USfWAg",
+  authDomain: "grape-e1a9d.firebaseapp.com",
+  projectId: "grape-e1a9d",
+  storageBucket: "grape-e1a9d.appspot.com",
+  messagingSenderId: "224448630227",
+  appId: "1:224448630227:web:b03a5e8c4b12fec81e3326",
+  measurementId: "G-1Q8ZD2THY9"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   // This is very IMPORTANT!! We're going to use "db" a lot.
@@ -39,7 +45,7 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.textContent = 'MemeChat 2.0'
+      title.textContent = 'Grape'
 
       title_inner_container.append(title)
       title_container.append(title_inner_container)
